@@ -11,5 +11,6 @@ jobs:
         uses: actions/checkout@v1
         with:
           fetch-depth: 1
+      - name: try ls
         run: ls $GITHUB_WORKSPACE
        
