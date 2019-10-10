@@ -1,6 +1,6 @@
 name: Docker Test
 
-on: [issues]
+on: [push]
 
 jobs:
   build:
