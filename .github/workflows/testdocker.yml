@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Docker login
-        run: run: echo '${{ secrets.DOCKERHUB_PASS }}' | docker login --username heather999 --password-stdin
+        run: echo '${{ secrets.DOCKERHUB_PASS }}' | docker login --username heather999 --password-stdin
       - name: checkout dockerfiles 
         uses: actions/checkout@v1
         with:
