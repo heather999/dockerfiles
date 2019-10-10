@@ -14,5 +14,5 @@ jobs:
       - name: try ls
         run: ls $GITHUB_WORKSPACE
       - name: do docker build
-        run: docker build --squash -f Dockerfile-python-sims $GITHUB_WORKSPACE/jupyter
+        run: docker build -f Dockerfile-python-sims $GITHUB_WORKSPACE/jupyter
        
