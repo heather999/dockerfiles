@@ -1,0 +1,15 @@
+name: Docker Test
+
+on: [issues]
+
+jobs:
+  build:
+    name: TryUbuntu
+    runs-on: ubuntu-18.04
+      steps:
+        - name: Docker build
+          uses: actions/checkout@v1
+          with:
+            fetch-depth: 1
+          run: ls $GITHUB_WORKSPACE
+       
